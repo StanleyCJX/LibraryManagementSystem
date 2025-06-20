@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Library Management System", // A descriptive name for your task
+            "type": "shell",
+            "command": "cl.exe",
+            "args": [
+                "/Zi", // For debugging
+                "/EHsc",
+                "/nologo",
+                "/Fe:${workspaceFolder}\\app.exe", // Output executable name
+                "${workspaceFolder}\\app.cpp",
+                "${workspaceFolder}\\Date.cpp",
+                "${workspaceFolder}\\LibBook.cpp",
+                "${workspaceFolder}\\LibStudent.cpp",
+                "${workspaceFolder}\\List.cpp",
+                "${workspaceFolder}\\Node.cpp" // Include all your .cpp files here
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true // Makes this the default build task
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new" // Optional: opens a new terminal for the build output
+            },
+            "problemMatcher": "$msCompile" // To parse MSVC compiler errors
+        }
+    ]
+}

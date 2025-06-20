@@ -1,0 +1,11 @@
+1.	Write a function bool ReadFile(string filename, List *list) to read from a file that store student
+information in a linked list. Ensure there is no duplicate record of student stored in the list. The 
+function will return true if successfully read and false otherwise. A sample of the textfile is in 
+“student.txt”.
+
+2.	Write a function bool DeleteRecord(List *list, char *id) to delete a student from the linked list based on
+student id. The function will return true if successfully delete and false if student cannot be found in the 
+list.
+9.	Write a int menu() function that contain menu with choice from 1 to 9 as shown below to let user 
+choose the task. Function will return the choice chosen. Make sure user can continuously choose for 
+the menu until exit choice is chosen. Sample menu is display below:
